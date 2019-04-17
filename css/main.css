@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    transition: .2s;
+}
+
+a:hover{
+    transition: .2s;
+    color: grey;
+}
+
+modal{
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    align-content: center;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#modalContain{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#modalContain img{
+    max-width: 100%;
+    max-height: 80vh;
+    margin: auto;
+}
+
+#close{
+    padding: 1em;
+    right: 0;
+    display: flex;
+}
+
+#close h2 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.imageClickable{
+    cursor: pointer;
+}
+
+.content {
+    padding: 16px;
+  }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+.placeholder{
+    height: 55px;
+}
+
+#navbar{
+    z-index: 100;
+}
+
+#indexBooks {
+    background-image: url("../images/index/primo.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.secDesc{
+    text-align: center;
+}
+
+#indexBooksMobile {
+    display: none;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    outline: none;
+}
+
+a:active, a:focus {
+    outline: none;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+h3{
+    margin: 1em;
+}
+
+p{
+    line-height: 1.5em;
+    margin: 0;
+}
+
+list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+#biography {
+    padding-top: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph {
+    max-width: 40em;
+    margin: 1em;
+    word-wrap: break-word;
+}
+
+.bioImage {
+    max-width: 40em;
+    height: 100%;
+    margin: 1em;
+}
+
+#work {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 3em;
+}
+
+#work h1{
+    text-align: center;
+}
+
+#workGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.workImg {
+    max-width: 20em;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+.sectionTitle {
+    padding-top: 3em;
+}
+
+#book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.GalleryDetail {
+    width: 30em;
+    margin: .5em;
+    overflow: hidden;
+}
+
+.GalleryDetail img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#merch h3{
+    margin: 0;
+    padding-top: 1em;
+}
+
+ul {
+    padding: 0;
+
+}
+
+li {
+    max-width: 25em;
+    line-height: 1.25em;
+}
+
+#merch{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.listing {
+    padding: 1em;
+}
+
+.listImg{
+    max-width: 25em;
+    overflow: hidden;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 800px){
+    #indexBooks{
+        display: none;
+    }
+
+    #indexBooksMobile {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px){
+    h3 {
+        margin-left: .5em;
+        margin-right: .5em;
+    }
+}
