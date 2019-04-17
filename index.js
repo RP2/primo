@@ -8,18 +8,7 @@ document.ready = function() {
         }
     })
 }
-// makes nav bar sticky when scrolling down, refresh top on resize
-// let navbar = document.getElementById("navbar");
-// let sticky = navbar.offsetTop;
-// window.onresize = function(){ location.reload(); }
-// window.onscroll = function() {
-//   if (window.pageYOffset >= sticky) { 
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
-
+//image clickable
 $(".imageClickable").click(function(){
   let image = $(this).attr("src")
   $("modal img").attr("src", image);
